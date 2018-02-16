@@ -1,0 +1,16 @@
+@keyFrames backRotate {
+    0%{
+        transform: rotateY(0deg);
+        background-color: cadetblue;
+    }
+    50%{
+        transform: rotateY(180deg);
+        background-color: seagreen;
+    }
+    100%{
+        transform: rotateY(360deg);
+        background-color: cadetblue;
+        
+    }
+}
+
