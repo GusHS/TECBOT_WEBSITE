@@ -5,11 +5,68 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <script language="javascript">
+        function makeNoise(){
+            alert ("Hi!!!!!");
+        }
+    </script>
     <div>
         <form enctype="text/plain" method="GET"
-        action="mailto:za3231910@mvrht.net">
-            <table>
-
+        action="mailto:za3253530@mvrht.net">
+            <table class="tableStyle">
+                <tr>
+                    <th cflavspan="2">Forms</th>
+                </tr>
+                <tr>
+                    <td>Campo</td><td>Valor</td>
+                </tr>
+                <tr>
+                    <td>Nombre</td><td><input type="text"
+                        name="contactName" placehflavder="Your Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mensaje</td>
+                    <td>
+                        <textarea name="contactMessage">Hi!</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Selection</td>
+                    <td>
+                        <select multiple="1" name="contactCity" id="">
+                            <option value="1">Toluca</option>
+                            <option value="2">Cd. Obregon</option>
+                            <option value="3">Temoaya</option>
+                            <option value="4">Santa Rosa</option>
+                            <option value="5">Ocuilan</option>
+                            <option value="6">Bejucos</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Checkbox!!!</td>
+                    <td>
+                        <input type="checkbox" name="o1" value="F">Fresas</br>
+                        <input type="checkbox" name="o2" value="U">Uvas</br>
+                        <input type="checkbox" name="o3" value="T">Mango</br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Radio!!!</td>
+                    <td>
+                        <input type="radio" name="flav" value="F">Fresas</br>
+                        <input type="radio" name="flav" value="U">Uvas</br>
+                        <input type="radio" name="flav" value="T">Mango</br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="reset">Limpiar</button></br>
+                        <button type="submit">Enviar</button>
+                        <button type="button" onclick="makeNoise();">Click</button>
+                    </td>
+                </tr>
             </table>
         </form>
     </div>
