@@ -6,16 +6,20 @@
 </head>
 <body>
     <script language="javascript">
-        function makeNoise(){
-            alert ("Hi!!!!!");
+        function replaceStyle(id, styleToRemove, styleToAdd){
+            document.getElementById(id).classList.remove(styleToRemove);
+            document.getElementById(id).classList.add(styleToAdd);
+        }
+        function addStyle(id, styleToAdd){
+            document.getElementById(id).classList.add(styleToAdd);
         }
     </script>
     <div>
         <form enctype="text/plain" method="GET"
         action="mailto:za3253530@mvrht.net">
-            <table class="tableStyle">
+            <table class="tableStyle" id="myTable">
                 <tr>
-                    <th cflavspan="2">Forms</th>
+                    <th cflavspan="2" id="title">Forms</th>
                 </tr>
                 <tr>
                     <td>Campo</td><td>Valor</td>
@@ -32,9 +36,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Selection</td>
+                    <td onclick="addStyle('myTable','backChange');">Selection</td>
                     <td>
-                        <select multiple="1" name="contactCity" id="">
+                        <select multiple="1" name="contactCity">
                             <option value="1">Toluca</option>
                             <option value="2">Cd. Obregon</option>
                             <option value="3">Temoaya</option>
@@ -64,7 +68,7 @@
                     <td colspan="2">
                         <button type="reset">Limpiar</button></br>
                         <button type="submit">Enviar</button>
-                        <button type="button" onclick="makeNoise();">Click</button>
+                        <button type="button" onclick="replaceStyle('myTable','tableStyle','tableStyle2');">Click</button>
                     </td>
                 </tr>
             </table>
