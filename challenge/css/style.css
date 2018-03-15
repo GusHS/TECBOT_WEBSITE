@@ -1,0 +1,127 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+#lobby{
+    height: 100%;
+    width: 100%;
+    background-color: #232b2b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#welcomeImg{
+    width: 80%;
+    height: 40%;
+    margin: 5% auto;
+    background-image: url('../img/welcome.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#info{
+    width: 60%;
+    height: 30%;
+    margin-bottom: 6%; 
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5vw;
+}
+
+#infoText{
+    height: 100%;
+    width: 73%;
+}
+#companyImg{
+    height: 100%;
+    width: 30%;
+    background-image: url('../img/imgComp.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#contact{
+    height: 100%;
+    width: 100%;
+    background-color:  #3b444b;
+    display: flex;
+    flex-direction: column;
+}
+
+#title{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4vw;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 6%;
+}
+
+#content{
+    margin-top: 6%;
+    height: 50%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#imgContact{
+    height: 100%;
+    width: 40%;
+    background-image: url('../img/map.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#contactInfo{
+    width: 50%;
+    height: 100%;
+    font-size: 2vw;
+    margin-left: 2%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2vw;
+}
+
+@media only screen and (min-device-width : 414px) 
+and (max-device-width : 667px) { 
+    #lobby{
+        height: 50%;
+        width: 100%;
+    }
+    
+    #welcomeImg{
+        width: 90%;
+        height: 30%;
+    }
+
+    #infoText{
+        font-size: 15px;
+    }
+
+    #contact{
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    #content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin-left: 30%;
+    }
+
+}
+
+
