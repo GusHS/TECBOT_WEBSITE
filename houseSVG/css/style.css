@@ -1,0 +1,93 @@
+#entrance{
+    fill: red;
+    stroke-width: 3;
+    stroke: black;
+    position: absolute;
+    z-index: 1;
+}
+#wall{
+    fill: rgb(110, 9, 9);
+    stroke-width: 3;
+    stroke: black;
+    position: absolute;
+    z-index: 1;
+}
+#door{
+    fill: rgb(129, 88, 11);
+    stroke-width: 3;
+    stroke: black;
+    position: absolute;
+    z-index: 2;
+}
+#doorBack{
+    fill: black;
+    stroke-width: 3;
+    stroke: black;
+    position: absolute;
+    z-index: -1;
+}
+
+#triangleRoof{
+    fill: chocolate;
+    stroke-width: 3;
+    stroke: black;
+}
+
+#roof{
+    fill: rgb(94, 52, 22);
+    stroke-width: 3;
+    stroke: black;
+}
+
+#circle{
+    fill: aquamarine;
+    stroke-width: 3;
+    stroke: black;
+}
+
+#sun{
+    fill: yellow;
+    stroke-width: 3;
+    stroke: black;
+}
+#sunBack{
+    fill: white;
+}
+
+.rayo{
+    stroke:peru;
+    stroke-width:3;
+    
+}
+
+.grass{
+    stroke: green;
+    stroke: 3;
+}
+
+#rayos{
+    transform-origin: 150px, 150px;
+}
+#window{
+    fill: aqua;
+}
+
+#rayos:hover{
+    animation: rotation 2s infinite linear;
+}
+
+
+
+svg{
+    border: 1px solid black;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+       
+    }
+}
