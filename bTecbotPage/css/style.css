@@ -1,0 +1,50 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.bg-clear{
+    background-color: transparent;
+}
+.wave{
+    fill: white;
+    transform: translateY(-45px);
+    overflow: hidden;
+}
+.space{
+    height: 5000px;
+    width: 100%;
+}
+.center{
+    float: none;
+    margin: 0 auto;
+}
+#lobby{
+    height: 90%;
+    width: 100%;
+    background-image: url('../img/teams2016.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+#lobbyText{
+    height: 80%;
+    position: fixed;
+}
+.lobby-subtitle{
+    font-size: 4vw;
+    font-weight: 800;
+}
+#lobby-title{
+    font-size: 6vw;
+    font-family: 'Raleway', sans-serif;
+}
+#lobby-title span{
+    font-size: 8vw;
+}
+.txt-white{
+    color: white;
+}
