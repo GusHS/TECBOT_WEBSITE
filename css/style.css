@@ -6,6 +6,7 @@ html,body{
     font-family: 'Ubuntu', sans-serif;
 }
 .bg-clear{
+    transition: ease-in 0.5s;
     background-color: transparent;
 }
 .wave{
@@ -30,6 +31,9 @@ html,body{
     background-attachment: fixed;
     color: white;
 }
+#teamLogo{
+    height: 40px;
+}
 #lobbyText{
     height: 80%;
     position: fixed;
@@ -47,4 +51,104 @@ html,body{
 }
 .txt-white{
     color: white;
+}
+.bg-inverse{
+    transition: ease-in 0.5s;
+    background-color: rgb(9, 35, 119);
+}
+
+#teamStory{
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+#storyContainer{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#storyContent{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#storyImage{
+    height: 80%;
+    width: 40%;
+    background-image: url('../img/ourStory.jpg');
+    background-position: center;
+    background-size: cover;
+    border-image: linear-gradient(to bottom, #01b4eb 0%, #3a4ed5 100%);
+    border-image-slice: 1;
+}
+#storyTitle{
+    height: 15%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+#storyBack{
+    position: absolute;
+    z-index: 1;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: 6vw;
+    color: rgba(0, 89, 184, 0.075);
+}
+#storyFront{
+    position: absolute;
+    z-index: 2;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: 3vw;
+    margin-left: 15px;
+    color: #100D53;
+}
+#storyDivider{
+    height: 3px;
+    width: 25%;
+    float: left;
+    margin-top: 5%;
+    background: linear-gradient(to right, #13A2E9 50%, #100D53 120%);
+    margin-bottom: 5%;
+}
+#storyBtn-group{
+    width: 50%;
+    height: 10%;
+    background-color: dodgerblue;
+}
+#storyText{
+    height: 50%;
+    width: 90%;
+    background-color: lightgray;
+}
+#storyButton{
+    height: 10%;
+    width: 50%;
+    background-color: navy;
+    color: white;
+    border-radius: 50px;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lineBold-blue{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    fill: #00428A;
 }
