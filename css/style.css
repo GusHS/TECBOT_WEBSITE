@@ -60,7 +60,7 @@ html,body{
 /*** Story Section CSS ***/
 
 #teamStory{
-    position: absolute;
+    position: relative;
     z-index: 2;
     background-color: white;
     height: 80%;
@@ -111,7 +111,7 @@ html,body{
 }
 #storyDivider{
     height: 3px;
-    width: 25%;
+    width: 40%;
     float: left;
     margin-top: 5%;
     background: linear-gradient(to right, #13A2E9 50%, #100D53 120%);
@@ -135,9 +135,11 @@ html,body{
     width: 100%;
     height: 100%;
     color: transparent;
-    text-shadow: 0 0 0 gray;
-    text-align: center;
+    text-shadow: 0 0 0 black;
+    text-align: justify;
     cursor: default;
+    padding: 5%;
+    
 }
 
 #storyButton{
