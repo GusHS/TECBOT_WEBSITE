@@ -7,28 +7,36 @@ $(window).scroll(function(){
     }
 });
  /** Changing Story Text**/
- var requestURL = "../json/texts.json";
+var requestURL = "https://api.myjson.com/bins/rfkhs";
+var request = new XMLHttpRequest();
 
+request.open('GET', requestURL); // Opens new request, use HTTP 'GET' method to receive data, also the json path is required.
+request.responseType = 'json';
+request.send(); 
 
-window.onload = setInitialText;
+request.onload = function (){
+    var jStories = request.response;
+    setInitialText(jStories);
 
-function setInitialText() {
-    //jQuery('#taStory').val("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    jQuery(document).ready(function(){
+        jQuery('#btn-1').click(function(){
+            setInitialText(jStories);
+        });
+    
+        jQuery('#btn-2').click(function(){  
+            var text = jStories['stories'][1];
+            jQuery('#taStory').val(text);
+        });
+    
+        jQuery('#btn-3').click(function(){
+            
+            var text = jStories['stories'][2];
+            jQuery('#taStory').val(text);
+        });
+    });
 
+    function setInitialText(jsonObj) {
+        var text = jsonObj['stories'][0];
+        jQuery('#taStory').val(text);
+    }
 }
-
-/* JQuery implementation
-jQuery(document).ready(function(){
-    jQuery('#btn-1').click(function(){
-        setInitialText();
-    });
-
-    jQuery('#btn-2').click(function(){
-        jQuery('#taStory').val("Text 2");
-    });
-
-    jQuery('#btn-3').click(function(){
-        jQuery('#taStory').val("Text 3");
-    });
-});
-*/
