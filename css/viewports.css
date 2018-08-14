@@ -16,7 +16,7 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
+    
 
 }
 
@@ -26,6 +26,10 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+    #teamStory{
+        height: 140%;
+    }
+
     #storyContent{
         width: 100%;
     }
@@ -34,6 +38,15 @@
     }
     #storyImage{
         display: none;
+    }
+    #contact{
+        height: 45%;
+    }
+    #contact-txt-1{
+        font-size: 3vw
+    }
+    #contact-txt-2{
+        font-size: 2vw
     }
 }
 

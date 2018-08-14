@@ -15,9 +15,11 @@ html,body{
     overflow: hidden;
 }
 .space{
+    position: relative;
     height: 5000px;
     width: 100%;
 }
+
 .center{
     float: none;
     margin: 0 auto;
@@ -169,6 +171,7 @@ html,body{
 .btn-blue:hover{
     cursor: pointer;
 }
+
 #tba-btn a{
     text-decoration: none;
     color: white;
@@ -178,4 +181,52 @@ html,body{
 #tba-logo{
     height: 35px;
     padding-right: 15px;
+}
+
+/* Contact Us Section*/
+
+.blue-bump{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    fill: #00428A;
+    position: relative;
+}
+#contact{
+    position: relative;
+    height: 30%;
+    width: 100%;
+    background-color: #00428A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contactContainer{
+    height: 80%;
+    width: 80%;
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+}
+#contactTitle{
+    height: 25%;
+    width: 55%;
+    background-color: white;
+}
+#contactSubtitle{
+    margin-top: 5%;
+    height: 40%;
+    width: 45%;
+    background-color: white;
+}
+#contactButton{
+    margin-top: 5%;
+    height: 15%;
+    width: 35%;
+    background-color: white;
+    border-radius: 50px;
+    transform: translateX(150%);
+}
+#btn-contact{
+     
 }
